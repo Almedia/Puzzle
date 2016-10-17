@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Amazon;
+using Amazon.S3;
+using Puzzle.Core;
+using Puzzle.Core.Interface;
 
 namespace Puzzle.WebApi
 {
@@ -31,7 +35,8 @@ namespace Puzzle.WebApi
             services.AddMvc();
             services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
             services.AddAWSService<IAmazonS3>();
-            services.AddAWSService<IAmazonDynamoDB>();
+            services.AddTransient<IPicture, Picture>();
+            // services.AddAWSService<IAmazonDynamoDB>();
             services.AddSwaggerGen();
         }
 
