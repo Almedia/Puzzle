@@ -3,17 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Puzzle.Core.Interface;
 
 namespace Puzzle.WebApi.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        private readonly IPhotoRepository photoRepository;
+
+        public ValuesController(IPhotoRepository photoRepository){
+            this.photoRepository=photoRepository;
+        }
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            this.photoRepository.Save("me");
             return new string[] { "value1", "value2" };
+
         }
 
         // GET api/values/5

@@ -1,0 +1,5 @@
+{
+    "ConnectionStrings": {  
+        "DataAccessMySqlProvider": "server=mysqlinstance.ci0jfdlf2czl.us-west-2.rds.amazonaws.com;userid=puzzle_test;password=Maslak55;database=puzzle_test;SslMode=None"
+        }
+}

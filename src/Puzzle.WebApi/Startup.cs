@@ -11,6 +11,9 @@ using Amazon;
 using Amazon.S3;
 using Puzzle.Core;
 using Puzzle.Core.Interface;
+using Puzzle.Infrastructure.Context;
+using Puzzle.Infrastructure.Repository;
+using MySQL.Data.EntityFrameworkCore.Extensions; 
 
 namespace Puzzle.WebApi
 {
@@ -22,6 +25,7 @@ namespace Puzzle.WebApi
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddJsonFile("config.json", optional: true, reloadOnChange: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
@@ -31,12 +35,22 @@ namespace Puzzle.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var sqlConnectionString = Configuration.GetConnectionString("DataAccessMySqlProvider");
+            
             // Add framework services.
             services.AddMvc();
+            services.AddTransient<IPhotoRepository,PhotoRepository>();
+            services.AddDbContext<PhotoContext>(options =>
+            {
+                options.UseMySQL(sqlConnectionString);
+            });
+
             services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
+          
             services.AddAWSService<IAmazonS3>();
             services.AddTransient<IPicture, Picture>();
-            // services.AddAWSService<IAmazonDynamoDB>();
+            services.AddTransient<IPhotoRepository,PhotoRepository>();
+          
             services.AddSwaggerGen();
         }
 

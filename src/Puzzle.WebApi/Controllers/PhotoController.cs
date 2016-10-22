@@ -16,8 +16,11 @@ namespace Puzzle.WebApi.Controllers
 
         private readonly IPicture pictureService;
 
-        public PhotoController(IPicture pictureService){
+        private readonly IPhotoRepository photoRepository;
+
+        public PhotoController(IPicture pictureService,IPhotoRepository photoRepository){
         this.pictureService=pictureService;
+        this.photoRepository=photoRepository;
              
         }
 
@@ -25,6 +28,12 @@ namespace Puzzle.WebApi.Controllers
         public IActionResult Post(Image image){
 
             return CreatedAtRoute("GetTodo", new { id = image.CreateDate }, image);           
+        }
+
+        [HttpGet]
+        public List<string> GetPictureDetails(){
+            var pictures=this.pictureService.GetPicture();
+            return pictures;
         }
     }
 }
