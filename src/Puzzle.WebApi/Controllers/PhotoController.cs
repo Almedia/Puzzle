@@ -17,11 +17,8 @@ namespace Puzzle.WebApi.Controllers
 
         private readonly IPhotoService photoService;
 
-      
-
-        public PhotoController(IPhotoService photoService,IPhotoRepository photoRepository){
-        this.photoService=photoService;
-        this.photoRepository=photoRepository;
+        public PhotoController(IPhotoService photoService){
+            this.photoService=photoService;
              
         }
 
@@ -33,7 +30,7 @@ namespace Puzzle.WebApi.Controllers
         [HttpGet]
         public List<Photo> GetPictureDetails(long customerId){
 
-            var customerPhoto=this.photoService.GetCustomerPhoto(customerId);
+            var customerPhoto=this.photoService.GetUserPhoto(customerId);
             return customerPhoto;
         }
     }

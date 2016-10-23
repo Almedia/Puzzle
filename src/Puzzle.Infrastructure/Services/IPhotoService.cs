@@ -7,6 +7,6 @@ namespace Puzzle.Infrastructure.Services
     {
         void SavePicture();
 
-        List<Photo> GetCustomerPhoto(long customerId);
+        List<Photo> GetUserPhoto(long customerId);
     }
 }

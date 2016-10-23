@@ -20,10 +20,9 @@ namespace Puzzle.ApplicationServices
 
         }
 
-        public List<Photo> GetCustomerPhoto(long userId){
-            var photoInfo=this.photoRepository.GetUserPhoto();
-            List<Photo> photo=new List<Photo>();
-            return photo;
+        public List<Photo> GetUserPhoto(long userId){
+            var photoInfo=this.photoRepository.GetUserPhoto(userId);
+            return photoInfo;
         }
 
     }

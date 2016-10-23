@@ -7,6 +7,6 @@ namespace Puzzle.Core.Interface
     {
        void Save(string me);
 
-       Photo GetUserPhoto(long customerId);
+       List<Puzzle.Core.Model.Photo> GetUserPhoto(long userId);
     }
 }

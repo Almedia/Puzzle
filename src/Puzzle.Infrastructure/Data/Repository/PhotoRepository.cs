@@ -1,7 +1,8 @@
+using System.Collections.Generic;
 using Puzzle.Infrastructure.Context;
 using Puzzle.Infrastructure.Model;
 using Puzzle.Core.Interface;
-using Puzzle.Core.Model;
+using System.Linq;
 
 namespace Puzzle.Infrastructure.Repository
 {
@@ -23,8 +24,17 @@ namespace Puzzle.Infrastructure.Repository
         }
 
         public List<Puzzle.Core.Model.Photo> GetUserPhoto(long userId){
+            var list=new List<Puzzle.Core.Model.Photo>();
+            var photos=this.photoContext.Photo.Where(x=>x.CustomerID==userId).ToList();
 
-            return new List<Puzzle.Core.Model.Photo>();
+            foreach (var photo in photos)
+            {
+                Puzzle.Core.Model.Photo model=new Puzzle.Core.Model.Photo(){
+                    CustomerId=photo.CustomerID
+                };
+                list.Add(model);
+            }
+            return list;
         }
     }
 }
