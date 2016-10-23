@@ -8,7 +8,10 @@
     "MySql.Data.EntityFrameworkCore": "7.0.4-IR-191",
     "Puzzle.Core.Interface": {
             "target": "project"
-        }
+        },
+     "Puzzle.Core": {
+            "target": "project"
+     }
   },
 
   "frameworks": {

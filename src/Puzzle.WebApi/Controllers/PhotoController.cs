@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Puzzle.ApplicationServices;
 using Microsoft.Extensions.Logging;
 using Puzzle.Core.Interface;
+using Puzzle.Core.Model;
+using Puzzle.Infrastructure.Services;
 
 namespace Puzzle.WebApi.Controllers
 {
@@ -14,26 +15,26 @@ namespace Puzzle.WebApi.Controllers
     {
         // private readonly ILogger<PhotoController> _logger;
 
-        private readonly IPicture pictureService;
+        private readonly IPhotoService photoService;
 
-        private readonly IPhotoRepository photoRepository;
+      
 
-        public PhotoController(IPicture pictureService,IPhotoRepository photoRepository){
-        this.pictureService=pictureService;
+        public PhotoController(IPhotoService photoService,IPhotoRepository photoRepository){
+        this.photoService=photoService;
         this.photoRepository=photoRepository;
              
         }
 
         [HttpPost]
-        public IActionResult Post(Image image){
-
-            return CreatedAtRoute("GetTodo", new { id = image.CreateDate }, image);           
+        public IActionResult Post(Photo photo){
+            return CreatedAtRoute("GetTodo", new { id = photo.CreateDate }, photo);           
         }
 
         [HttpGet]
-        public List<string> GetPictureDetails(){
-            var pictures=this.pictureService.GetPicture();
-            return pictures;
+        public List<Photo> GetPictureDetails(long customerId){
+
+            var customerPhoto=this.photoService.GetCustomerPhoto(customerId);
+            return customerPhoto;
         }
     }
 }

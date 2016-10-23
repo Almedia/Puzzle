@@ -12,7 +12,9 @@ using Amazon.S3;
 using Puzzle.Core;
 using Puzzle.Core.Interface;
 using Puzzle.Infrastructure.Context;
+using Puzzle.Infrastructure.Services;
 using Puzzle.Infrastructure.Repository;
+using Puzzle.ApplicationServices;
 using MySQL.Data.EntityFrameworkCore.Extensions; 
 
 namespace Puzzle.WebApi
@@ -48,7 +50,7 @@ namespace Puzzle.WebApi
             services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
           
             services.AddAWSService<IAmazonS3>();
-            services.AddTransient<IPicture, Picture>();
+            services.AddTransient<IPhotoService, PhotoService>();
             services.AddTransient<IPhotoRepository,PhotoRepository>();
           
             services.AddSwaggerGen();
