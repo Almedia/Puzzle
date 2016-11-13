@@ -5,8 +5,9 @@ namespace Puzzle.Core.Interface
 {
     public interface IPhotoRepository
     {
-       void Save(string me);
 
        List<Puzzle.Core.Model.Photo> GetUserPhoto(long userId);
+
+       void SaveUserPhoto(Puzzle.Core.Model.Photo photo);
     }
 }

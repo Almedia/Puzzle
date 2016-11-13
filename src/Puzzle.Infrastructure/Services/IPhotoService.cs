@@ -5,8 +5,10 @@ namespace Puzzle.Infrastructure.Services
 {
     public interface IPhotoService
     {
-        void SavePicture();
+        //void SavePicture();
 
         List<Photo> GetUserPhoto(long customerId);
+
+        void SaveUserPhoto(Photo photo);
     }
 }

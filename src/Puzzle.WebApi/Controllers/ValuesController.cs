@@ -10,16 +10,16 @@ namespace Puzzle.WebApi.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        private readonly IPhotoRepository photoRepository;
+        // private readonly IPhotoRepository photoRepository;
 
-        public ValuesController(IPhotoRepository photoRepository){
-            this.photoRepository=photoRepository;
+        public ValuesController(){
+            // this.photoRepository=photoRepository;
         }
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            this.photoRepository.Save("me");
+            // this.photoRepository.Save("me");
             return new string[] { "value1", "value2" };
 
         }

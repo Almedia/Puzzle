@@ -22,9 +22,12 @@ namespace Puzzle.WebApi.Controllers
              
         }
 
-        [HttpPost]
-        public IActionResult Post(Photo photo){
-            return CreatedAtRoute("GetTodo", new { id = photo.CreateDate }, photo);           
+        [HttpPost("{id}", Name = "user")]
+        public IActionResult Post([FromBody]Photo photo){
+
+            this.photoService.SaveUserPhoto(photo);
+
+            return CreatedAtRoute("user", new { id = photo.UserId }, photo);           
         }
 
         [HttpGet]

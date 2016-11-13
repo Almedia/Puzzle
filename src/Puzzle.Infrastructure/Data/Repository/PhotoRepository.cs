@@ -1,9 +1,10 @@
+using System;
 using System.Collections.Generic;
 using Puzzle.Infrastructure.Context;
 using Puzzle.Infrastructure.Model;
 using Puzzle.Core.Interface;
 using System.Linq;
-
+ 
 namespace Puzzle.Infrastructure.Repository
 {
     public class PhotoRepository:IPhotoRepository
@@ -14,23 +15,26 @@ namespace Puzzle.Infrastructure.Repository
              this.photoContext.Database.EnsureCreated();
         }
 
-         public void Save(string me){
-                    Photo photo=new Photo(){
-                    CustomerID=123
+        public void SaveUserPhoto(Puzzle.Core.Model.Photo photo){
+
+                    Photo dbPhoto=new Photo(){
+                        UserId=photo.UserId,
+                        StorageId="1234",
+                        CreateDate=DateTime.Now
                     };
                             
-                photoContext.Add(photo);
+                photoContext.Add(dbPhoto);
                 photoContext.SaveChanges();       
         }
 
         public List<Puzzle.Core.Model.Photo> GetUserPhoto(long userId){
             var list=new List<Puzzle.Core.Model.Photo>();
-            var photos=this.photoContext.Photo.Where(x=>x.CustomerID==userId).ToList();
+            var photos=this.photoContext.Photo.Where(x=>x.UserId==userId).ToList();
 
             foreach (var photo in photos)
             {
                 Puzzle.Core.Model.Photo model=new Puzzle.Core.Model.Photo(){
-                    CustomerId=photo.CustomerID
+                    UserId=photo.UserId
                 };
                 list.Add(model);
             }

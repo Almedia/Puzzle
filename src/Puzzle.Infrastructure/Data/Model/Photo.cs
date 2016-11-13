@@ -8,11 +8,13 @@ namespace Puzzle.Infrastructure.Model {
         public Photo(){
 
         }
-        public long PhotoID{get;set;}
+        public long PhotoID {get; set;}
 
-        public long CustomerID{get;set;}
+        public long UserId {get;set;}
 
-        public string PhotoStorageID{get;set;}
+        public string StorageId {get;set;}
+
+        public DateTime CreateDate {get;set;}
     }
 
 }

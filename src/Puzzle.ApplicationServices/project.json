@@ -3,13 +3,17 @@
 
   "dependencies": {
     "NETStandard.Library": "1.6.0",
+     "AWSSDK.Extensions.NETCore.Setup": "3.3.0.1",
      "Puzzle.Core": {
             "target": "project"
         },
      "Puzzle.Infrastructure": {
             "target": "project"
-        }
-  },
+        },
+      "AWSSDK.S3": "3.3.1.0"
+       
+            
+          },
 
   "frameworks": {
     "netstandard1.6": {
