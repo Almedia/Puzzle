@@ -47,9 +47,9 @@ namespace Puzzle.WebApi
             var accessKey = config["aws-access-key"];
             var secretKey = config["aws-secret-key"];
 
-             var credentials = new BasicAWSCredentials(
-                accessKey: accessKey,
-                secretKey: secretKey);
+            //  var credentials = new BasicAWSCredentials(
+            //     accessKey: accessKey,
+            //     secretKey: secretKey);
             
             // Add framework services.
             services.AddMvc();
@@ -60,9 +60,12 @@ namespace Puzzle.WebApi
                 options.UseMySQL(sqlConnectionString);
             });
 
+            var awsOptions=Configuration.GetAWSOptions();
+
             services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
-          
+
             services.AddAWSService<IAmazonS3>();
+
             services.AddTransient<IPhotoService, PhotoService>();
             services.AddTransient<IPhotoRepository,PhotoRepository>();
           
