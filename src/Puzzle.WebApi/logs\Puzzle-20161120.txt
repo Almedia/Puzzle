@@ -1,0 +1,227 @@
+2016-11-20 20:57:18.408 +02:00 [Debug] Hosting starting
+2016-11-20 20:57:18.548 +02:00 [Debug] Hosting started
+2016-11-20 20:57:23.438 +02:00 [Debug] Connection id ""0HL0HES80SE2P"" started.
+2016-11-20 20:57:23.438 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" started.
+2016-11-20 20:57:23.779 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui  
+2016-11-20 20:57:23.816 +02:00 [Information] Request finished in 59.384ms 302 
+2016-11-20 20:57:23.866 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:23.881 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/index.html  
+2016-11-20 20:57:23.897 +02:00 [Information] Request finished in 16.1794ms 200 text/html
+2016-11-20 20:57:23.901 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:23.953 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/css/typography.css  
+2016-11-20 20:57:23.990 +02:00 [Information] Sending file. Request path: '"/css/typography.css"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.023 +02:00 [Information] Request finished in 69.9234ms 200 text/css
+2016-11-20 20:57:24.023 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.027 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/css/reset.css  
+2016-11-20 20:57:24.027 +02:00 [Information] Sending file. Request path: '"/css/reset.css"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.027 +02:00 [Information] Request finished in 0.7089ms 200 text/css
+2016-11-20 20:57:24.027 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.032 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/css/screen.css  
+2016-11-20 20:57:24.033 +02:00 [Information] Sending file. Request path: '"/css/screen.css"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.033 +02:00 [Information] Request finished in 0.8457ms 200 text/css
+2016-11-20 20:57:24.034 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.039 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/object-assign-pollyfill.js  
+2016-11-20 20:57:24.040 +02:00 [Information] Sending file. Request path: '"/lib/object-assign-pollyfill.js"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.040 +02:00 [Information] Request finished in 0.6599ms 200 application/javascript
+2016-11-20 20:57:24.040 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.148 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/css/print.css  
+2016-11-20 20:57:24.149 +02:00 [Information] Sending file. Request path: '"/css/print.css"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.149 +02:00 [Information] Request finished in 0.9979ms 200 text/css
+2016-11-20 20:57:24.150 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.161 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/jquery-1.8.0.min.js  
+2016-11-20 20:57:24.162 +02:00 [Information] Sending file. Request path: '"/lib/jquery-1.8.0.min.js"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.172 +02:00 [Information] Request finished in 10.5259ms 200 application/javascript
+2016-11-20 20:57:24.172 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.173 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/jquery.slideto.min.js  
+2016-11-20 20:57:24.173 +02:00 [Information] Sending file. Request path: '"/lib/jquery.slideto.min.js"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.173 +02:00 [Information] Request finished in 0.5076ms 200 application/javascript
+2016-11-20 20:57:24.174 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.178 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/jquery.wiggle.min.js  
+2016-11-20 20:57:24.179 +02:00 [Information] Sending file. Request path: '"/lib/jquery.wiggle.min.js"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.179 +02:00 [Information] Request finished in 0.7864ms 200 application/javascript
+2016-11-20 20:57:24.179 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.189 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/jquery.ba-bbq.min.js  
+2016-11-20 20:57:24.189 +02:00 [Information] Sending file. Request path: '"/lib/jquery.ba-bbq.min.js"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.190 +02:00 [Information] Request finished in 0.7958ms 200 application/javascript
+2016-11-20 20:57:24.190 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.200 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/handlebars-4.0.5.js  
+2016-11-20 20:57:24.201 +02:00 [Information] Sending file. Request path: '"/lib/handlebars-4.0.5.js"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.202 +02:00 [Information] Request finished in 1.2627ms 200 application/javascript
+2016-11-20 20:57:24.202 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.221 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/lodash.min.js  
+2016-11-20 20:57:24.221 +02:00 [Information] Sending file. Request path: '"/lib/lodash.min.js"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.221 +02:00 [Information] Request finished in 0.5979ms 200 application/javascript
+2016-11-20 20:57:24.221 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.231 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/backbone-min.js  
+2016-11-20 20:57:24.232 +02:00 [Information] Sending file. Request path: '"/lib/backbone-min.js"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.232 +02:00 [Information] Request finished in 0.6762ms 200 application/javascript
+2016-11-20 20:57:24.232 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.237 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/swagger-ui.min.js  
+2016-11-20 20:57:24.238 +02:00 [Information] Sending file. Request path: '"/swagger-ui.min.js"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.239 +02:00 [Information] Request finished in 1.2905ms 200 application/javascript
+2016-11-20 20:57:24.239 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.247 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/highlight.9.1.0.pack.js  
+2016-11-20 20:57:24.247 +02:00 [Information] Sending file. Request path: '"/lib/highlight.9.1.0.pack.js"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.248 +02:00 [Information] Request finished in 0.6324ms 200 application/javascript
+2016-11-20 20:57:24.248 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.257 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/highlight.9.1.0.pack_extended.js  
+2016-11-20 20:57:24.257 +02:00 [Information] Sending file. Request path: '"/lib/highlight.9.1.0.pack_extended.js"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.257 +02:00 [Information] Request finished in 0.6238ms 200 application/javascript
+2016-11-20 20:57:24.258 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.264 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/jsoneditor.min.js  
+2016-11-20 20:57:24.264 +02:00 [Information] Sending file. Request path: '"/lib/jsoneditor.min.js"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.265 +02:00 [Information] Request finished in 0.9618ms 200 application/javascript
+2016-11-20 20:57:24.265 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.274 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/marked.js  
+2016-11-20 20:57:24.275 +02:00 [Information] Sending file. Request path: '"/lib/marked.js"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.275 +02:00 [Information] Request finished in 0.6037ms 200 application/javascript
+2016-11-20 20:57:24.275 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.285 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/swagger-oauth.js  
+2016-11-20 20:57:24.285 +02:00 [Information] Sending file. Request path: '"/lib/swagger-oauth.js"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.286 +02:00 [Information] Request finished in 0.5938ms 200 application/javascript
+2016-11-20 20:57:24.286 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.302 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/images/logo_small.png  
+2016-11-20 20:57:24.304 +02:00 [Information] Sending file. Request path: '"/images/logo_small.png"'. Physical path: '"N/A"'
+2016-11-20 20:57:24.305 +02:00 [Information] Request finished in 2.7973ms 200 image/png
+2016-11-20 20:57:24.305 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.422 +02:00 [Debug] Connection id ""0HL0HES80SE2R"" started.
+2016-11-20 20:57:24.423 +02:00 [Debug] Connection id ""0HL0HES80SE2S"" started.
+2016-11-20 20:57:24.423 +02:00 [Debug] Connection id ""0HL0HES80SE2T"" started.
+2016-11-20 20:57:24.424 +02:00 [Debug] Connection id ""0HL0HES80SE2U"" started.
+2016-11-20 20:57:24.658 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui  
+2016-11-20 20:57:24.658 +02:00 [Information] Request finished in 0.3416ms 302 
+2016-11-20 20:57:24.658 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.663 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/index.html  
+2016-11-20 20:57:24.664 +02:00 [Information] Request finished in 0.4489ms 200 text/html
+2016-11-20 20:57:24.664 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.677 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/css/typography.css  
+2016-11-20 20:57:24.679 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/css/reset.css  
+2016-11-20 20:57:24.679 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/css/screen.css  
+2016-11-20 20:57:24.682 +02:00 [Information] The file "/css/typography.css" was not modified
+2016-11-20 20:57:24.683 +02:00 [Information] The file "/css/screen.css" was not modified
+2016-11-20 20:57:24.684 +02:00 [Information] The file "/css/reset.css" was not modified
+2016-11-20 20:57:24.685 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/object-assign-pollyfill.js  
+2016-11-20 20:57:24.685 +02:00 [Information] The file "/lib/object-assign-pollyfill.js" was not modified
+2016-11-20 20:57:24.687 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/jquery-1.8.0.min.js  
+2016-11-20 20:57:24.687 +02:00 [Information] The file "/lib/jquery-1.8.0.min.js" was not modified
+2016-11-20 20:57:24.689 +02:00 [Debug] Handled. Status code: 304 File: "/css/typography.css"
+2016-11-20 20:57:24.689 +02:00 [Debug] Handled. Status code: 304 File: "/css/screen.css"
+2016-11-20 20:57:24.689 +02:00 [Debug] Handled. Status code: 304 File: "/css/reset.css"
+2016-11-20 20:57:24.689 +02:00 [Debug] Handled. Status code: 304 File: "/lib/jquery-1.8.0.min.js"
+2016-11-20 20:57:24.689 +02:00 [Debug] Handled. Status code: 304 File: "/lib/object-assign-pollyfill.js"
+2016-11-20 20:57:24.690 +02:00 [Information] Request finished in 12.6562ms 304 text/css
+2016-11-20 20:57:24.690 +02:00 [Information] Request finished in 5.9332ms 304 application/javascript
+2016-11-20 20:57:24.690 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.690 +02:00 [Debug] Connection id ""0HL0HES80SE2R"" completed keep alive response.
+2016-11-20 20:57:24.690 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/jquery.slideto.min.js  
+2016-11-20 20:57:24.690 +02:00 [Information] Request finished in 11.1036ms 304 text/css
+2016-11-20 20:57:24.690 +02:00 [Information] The file "/lib/jquery.slideto.min.js" was not modified
+2016-11-20 20:57:24.690 +02:00 [Debug] Connection id ""0HL0HES80SE2T"" completed keep alive response.
+2016-11-20 20:57:24.690 +02:00 [Debug] Handled. Status code: 304 File: "/lib/jquery.slideto.min.js"
+2016-11-20 20:57:24.691 +02:00 [Information] Request finished in 0.5536ms 304 application/javascript
+2016-11-20 20:57:24.691 +02:00 [Debug] Connection id ""0HL0HES80SE2S"" completed keep alive response.
+2016-11-20 20:57:24.691 +02:00 [Information] Request finished in 12.5024ms 304 text/css
+2016-11-20 20:57:24.691 +02:00 [Debug] Connection id ""0HL0HES80SE2P"" completed keep alive response.
+2016-11-20 20:57:24.692 +02:00 [Information] Request finished in 7.5604ms 304 application/javascript
+2016-11-20 20:57:24.692 +02:00 [Debug] Connection id ""0HL0HES80SE2U"" completed keep alive response.
+2016-11-20 20:57:24.702 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/jquery.wiggle.min.js  
+2016-11-20 20:57:24.702 +02:00 [Information] The file "/lib/jquery.wiggle.min.js" was not modified
+2016-11-20 20:57:24.702 +02:00 [Debug] Handled. Status code: 304 File: "/lib/jquery.wiggle.min.js"
+2016-11-20 20:57:24.703 +02:00 [Information] Request finished in 0.6989ms 304 application/javascript
+2016-11-20 20:57:24.703 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:24.703 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/jquery.ba-bbq.min.js  
+2016-11-20 20:57:24.703 +02:00 [Information] The file "/lib/jquery.ba-bbq.min.js" was not modified
+2016-11-20 20:57:24.703 +02:00 [Debug] Handled. Status code: 304 File: "/lib/jquery.ba-bbq.min.js"
+2016-11-20 20:57:24.703 +02:00 [Information] Request finished in 0.5851ms 304 application/javascript
+2016-11-20 20:57:24.704 +02:00 [Debug] Connection id ""0HL0HES80SE2T"" completed keep alive response.
+2016-11-20 20:57:24.704 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/handlebars-4.0.5.js  
+2016-11-20 20:57:24.704 +02:00 [Information] The file "/lib/handlebars-4.0.5.js" was not modified
+2016-11-20 20:57:24.704 +02:00 [Debug] Handled. Status code: 304 File: "/lib/handlebars-4.0.5.js"
+2016-11-20 20:57:24.704 +02:00 [Information] Request finished in 0.5405ms 304 application/javascript
+2016-11-20 20:57:24.704 +02:00 [Debug] Connection id ""0HL0HES80SE2R"" completed keep alive response.
+2016-11-20 20:57:24.705 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/lodash.min.js  
+2016-11-20 20:57:24.705 +02:00 [Information] The file "/lib/lodash.min.js" was not modified
+2016-11-20 20:57:24.705 +02:00 [Debug] Handled. Status code: 304 File: "/lib/lodash.min.js"
+2016-11-20 20:57:24.705 +02:00 [Information] Request finished in 0.5422ms 304 application/javascript
+2016-11-20 20:57:24.705 +02:00 [Debug] Connection id ""0HL0HES80SE2S"" completed keep alive response.
+2016-11-20 20:57:24.706 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/backbone-min.js  
+2016-11-20 20:57:24.706 +02:00 [Information] The file "/lib/backbone-min.js" was not modified
+2016-11-20 20:57:24.706 +02:00 [Debug] Handled. Status code: 304 File: "/lib/backbone-min.js"
+2016-11-20 20:57:24.706 +02:00 [Information] Request finished in 0.5397ms 304 application/javascript
+2016-11-20 20:57:24.706 +02:00 [Debug] Connection id ""0HL0HES80SE2P"" completed keep alive response.
+2016-11-20 20:57:24.959 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/css/print.css  
+2016-11-20 20:57:24.959 +02:00 [Information] The file "/css/print.css" was not modified
+2016-11-20 20:57:24.960 +02:00 [Debug] Handled. Status code: 304 File: "/css/print.css"
+2016-11-20 20:57:24.962 +02:00 [Information] Request finished in 2.9651ms 304 text/css
+2016-11-20 20:57:24.965 +02:00 [Debug] Connection id ""0HL0HES80SE2P"" completed keep alive response.
+2016-11-20 20:57:24.967 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/swagger-ui.min.js  
+2016-11-20 20:57:24.968 +02:00 [Information] The file "/swagger-ui.min.js" was not modified
+2016-11-20 20:57:24.969 +02:00 [Debug] Handled. Status code: 304 File: "/swagger-ui.min.js"
+2016-11-20 20:57:24.970 +02:00 [Information] Request finished in 7.3417ms 304 application/javascript
+2016-11-20 20:57:24.970 +02:00 [Debug] Connection id ""0HL0HES80SE2S"" completed keep alive response.
+2016-11-20 20:57:24.970 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/marked.js  
+2016-11-20 20:57:24.970 +02:00 [Information] The file "/lib/marked.js" was not modified
+2016-11-20 20:57:24.970 +02:00 [Debug] Handled. Status code: 304 File: "/lib/marked.js"
+2016-11-20 20:57:24.971 +02:00 [Information] Request finished in 0.5658ms 304 application/javascript
+2016-11-20 20:57:24.971 +02:00 [Debug] Connection id ""0HL0HES80SE2U"" completed keep alive response.
+2016-11-20 20:57:24.972 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/highlight.9.1.0.pack.js  
+2016-11-20 20:57:24.973 +02:00 [Information] The file "/lib/highlight.9.1.0.pack.js" was not modified
+2016-11-20 20:57:24.973 +02:00 [Debug] Handled. Status code: 304 File: "/lib/highlight.9.1.0.pack.js"
+2016-11-20 20:57:24.974 +02:00 [Information] Request finished in 10.3398ms 304 application/javascript
+2016-11-20 20:57:24.974 +02:00 [Debug] Connection id ""0HL0HES80SE2R"" completed keep alive response.
+2016-11-20 20:57:24.975 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/highlight.9.1.0.pack_extended.js  
+2016-11-20 20:57:24.975 +02:00 [Information] The file "/lib/highlight.9.1.0.pack_extended.js" was not modified
+2016-11-20 20:57:24.976 +02:00 [Debug] Handled. Status code: 304 File: "/lib/highlight.9.1.0.pack_extended.js"
+2016-11-20 20:57:24.976 +02:00 [Information] Request finished in 11.9995ms 304 application/javascript
+2016-11-20 20:57:24.977 +02:00 [Debug] Connection id ""0HL0HES80SE2T"" completed keep alive response.
+2016-11-20 20:57:24.977 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/jsoneditor.min.js  
+2016-11-20 20:57:24.978 +02:00 [Information] The file "/lib/jsoneditor.min.js" was not modified
+2016-11-20 20:57:24.978 +02:00 [Debug] Handled. Status code: 304 File: "/lib/jsoneditor.min.js"
+2016-11-20 20:57:24.978 +02:00 [Information] Request finished in 12.7109ms 304 application/javascript
+2016-11-20 20:57:24.978 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:25.000 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/lib/swagger-oauth.js  
+2016-11-20 20:57:25.001 +02:00 [Information] The file "/lib/swagger-oauth.js" was not modified
+2016-11-20 20:57:25.001 +02:00 [Debug] Handled. Status code: 304 File: "/lib/swagger-oauth.js"
+2016-11-20 20:57:25.001 +02:00 [Information] Request finished in 1.4184ms 304 application/javascript
+2016-11-20 20:57:25.002 +02:00 [Debug] Connection id ""0HL0HES80SE2P"" completed keep alive response.
+2016-11-20 20:57:25.050 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/images/logo_small.png  
+2016-11-20 20:57:25.050 +02:00 [Information] The file "/images/logo_small.png" was not modified
+2016-11-20 20:57:25.050 +02:00 [Debug] Handled. Status code: 304 File: "/images/logo_small.png"
+2016-11-20 20:57:25.050 +02:00 [Information] Request finished in 0.7878ms 304 image/png
+2016-11-20 20:57:25.051 +02:00 [Debug] Connection id ""0HL0HES80SE2P"" completed keep alive response.
+2016-11-20 20:57:25.250 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2016-11-20 20:57:25.465 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/images/favicon-16x16.png  
+2016-11-20 20:57:25.465 +02:00 [Information] Sending file. Request path: '"/images/favicon-16x16.png"'. Physical path: '"N/A"'
+2016-11-20 20:57:25.465 +02:00 [Information] Request finished in 0.6157ms 200 image/png
+2016-11-20 20:57:25.466 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:25.473 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/images/favicon-32x32.png  
+2016-11-20 20:57:25.473 +02:00 [Information] Sending file. Request path: '"/images/favicon-32x32.png"'. Physical path: '"N/A"'
+2016-11-20 20:57:25.474 +02:00 [Information] Request finished in 0.4998ms 200 image/png
+2016-11-20 20:57:25.474 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" completed keep alive response.
+2016-11-20 20:57:25.882 +02:00 [Information] Request finished in 631.8712ms 200 application/json
+2016-11-20 20:57:25.882 +02:00 [Debug] Connection id ""0HL0HES80SE2P"" completed keep alive response.
+2016-11-20 20:58:39.681 +02:00 [Debug] Hosting shutdown
+2016-11-20 20:58:39.697 +02:00 [Debug] Connection id ""0HL0HES80SE2P"" disconnecting.
+2016-11-20 20:58:39.697 +02:00 [Debug] Connection id ""0HL0HES80SE2R"" disconnecting.
+2016-11-20 20:58:39.697 +02:00 [Debug] Connection id ""0HL0HES80SE2S"" disconnecting.
+2016-11-20 20:58:39.698 +02:00 [Debug] Connection id ""0HL0HES80SE2P"" sending FIN.
+2016-11-20 20:58:39.699 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" disconnecting.
+2016-11-20 20:58:39.699 +02:00 [Debug] Connection id ""0HL0HES80SE2R"" sending FIN.
+2016-11-20 20:58:39.699 +02:00 [Debug] Connection id ""0HL0HES80SE2T"" disconnecting.
+2016-11-20 20:58:39.699 +02:00 [Debug] Connection id ""0HL0HES80SE2S"" sending FIN.
+2016-11-20 20:58:39.699 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" sending FIN.
+2016-11-20 20:58:39.699 +02:00 [Debug] Connection id ""0HL0HES80SE2T"" sending FIN.
+2016-11-20 20:58:39.699 +02:00 [Debug] Connection id ""0HL0HES80SE2U"" disconnecting.
+2016-11-20 20:58:39.703 +02:00 [Debug] Connection id ""0HL0HES80SE2P"" sent FIN with status "0".
+2016-11-20 20:58:39.703 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" sent FIN with status "0".
+2016-11-20 20:58:39.705 +02:00 [Debug] Connection id ""0HL0HES80SE2Q"" stopped.
+2016-11-20 20:58:39.705 +02:00 [Debug] Connection id ""0HL0HES80SE2P"" stopped.
+2016-11-20 20:58:39.705 +02:00 [Debug] Connection id ""0HL0HES80SE2T"" sent FIN with status "0".
+2016-11-20 20:58:39.705 +02:00 [Debug] Connection id ""0HL0HES80SE2R"" sent FIN with status "0".
+2016-11-20 20:58:39.705 +02:00 [Debug] Connection id ""0HL0HES80SE2T"" stopped.
+2016-11-20 20:58:39.706 +02:00 [Debug] Connection id ""0HL0HES80SE2R"" stopped.
+2016-11-20 20:58:39.706 +02:00 [Debug] Connection id ""0HL0HES80SE2U"" sending FIN.
+2016-11-20 20:58:39.706 +02:00 [Debug] Connection id ""0HL0HES80SE2S"" sent FIN with status "0".
+2016-11-20 20:58:39.706 +02:00 [Debug] Connection id ""0HL0HES80SE2U"" sent FIN with status "0".
+2016-11-20 20:58:39.706 +02:00 [Debug] Connection id ""0HL0HES80SE2S"" stopped.
+2016-11-20 20:58:39.706 +02:00 [Debug] Connection id ""0HL0HES80SE2U"" stopped.

@@ -17,7 +17,8 @@ using Puzzle.Infrastructure.Services;
 using Puzzle.Infrastructure.Repository;
 using Puzzle.ApplicationServices;
 using MySQL.Data.EntityFrameworkCore.Extensions; 
-
+using Serilog;
+using RabbitMQ; 
 namespace Puzzle.WebApi
 {
     public class Startup
@@ -31,6 +32,24 @@ namespace Puzzle.WebApi
                 .AddJsonFile("config.json", optional: true, reloadOnChange: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            var rabbitMQConfig = new RabbitMQConfiguration {
+            };
+            //     Hostname = _config["RABBITMQ_HOST"],
+            //     Username = _config["RABBITMQ_USER"],
+            //     Password = _config["RABBITMQ_PASSWORD"],
+            //     Exchange = _config["RABBITMQ_EXCHANGE"],
+            //     ExchangeType = _config["RABBITMQ_EXCHANGE_TYPE"],
+            //     DeliveryMode = RabbitMQDeliveryMode.Durable,
+            //     RouteKey = "Logs",
+            //     Port = 5672
+            // };
+
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Debug()
+                .WriteTo.LiterateConsole()
+                // .WriteTo.RabbitMQ(rabbitMQConfig, new JsonFormatter())
+                .CreateLogger();
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -77,6 +96,7 @@ namespace Puzzle.WebApi
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+            loggerFactory.AddSerilog();
 
             app.UseSwagger();
 
