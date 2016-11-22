@@ -1,8 +1,8 @@
 using System;
 using MySQL.Data.EntityFrameworkCore.Extensions; 
 
-namespace Puzzle.Infrastructure.Model {
-
+namespace Puzzle.Infrastructure.Data.Model 
+{
     public class Photo
     {
         public Photo(){

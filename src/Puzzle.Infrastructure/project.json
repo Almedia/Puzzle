@@ -11,7 +11,8 @@
         },
      "Puzzle.Core": {
             "target": "project"
-     }
+     },
+     "AutoMapper.Extensions.Microsoft.DependencyInjection": "1.1.2"
   },
 
   "frameworks": {

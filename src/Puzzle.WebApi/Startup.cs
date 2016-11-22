@@ -1,27 +1,28 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Amazon;
-using Amazon.Runtime;
 using Amazon.S3;
-using Puzzle.Core;
 using Puzzle.Core.Interface;
-using Puzzle.Infrastructure.Context;
+using Puzzle.Infrastructure.Data.Context;
 using Puzzle.Infrastructure.Services;
 using Puzzle.Infrastructure.Repository;
 using Puzzle.ApplicationServices;
-using MySQL.Data.EntityFrameworkCore.Extensions; 
+using MySQL.Data.EntityFrameworkCore.Extensions;
+using Serilog;
+// using RabbitMQ; 
+// using Serilog.Sinks.RabbitMQ;
+// using Serilog.Formatting.Json;
+// using Serilog.Sinks.RabbitMQ.Sinks.RabbitMQ;
+using AutoMapper;
+using Puzzle.Infrastructure.Mapping;
 
 namespace Puzzle.WebApi
 {
     public class Startup
     {
+        private MapperConfiguration mapperConfiguration { get; set; }
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
@@ -31,6 +32,23 @@ namespace Puzzle.WebApi
                 .AddJsonFile("config.json", optional: true, reloadOnChange: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            // var rabbitMQConfig = new RabbitMQConfiguration  {
+            //     Hostname = "http://35.163.189.218",
+            //     Username = "bado",
+            //     Password = "Maslak55",
+            //     Exchange = "LogExchange",
+            //     ExchangeType = "RABBITMQ_EXCHANGE_TYPE",
+            //     DeliveryMode = RabbitMQDeliveryMode.Durable,
+            //     RouteKey = "Logs",
+            //     Port = 5672
+            // };
+
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Debug()
+                .WriteTo.LiterateConsole()
+                .WriteTo.RollingFile(@"c:\Logs\Puzzle\Log.txt log-{Date}.txt")
+                .CreateLogger();
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -68,8 +86,22 @@ namespace Puzzle.WebApi
 
             services.AddTransient<IPhotoService, PhotoService>();
             services.AddTransient<IPhotoRepository,PhotoRepository>();
-          
-            
+            services.AddAutoMapper();
+
+            mapperConfiguration = new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile(new AutoMapperProfileConfiguration());
+            });
+
+            services.AddSingleton<IMapper>(sp => mapperConfiguration.CreateMapper());
+
+            //  MapperConfiguration configuration = new MapperConfiguration(cfg =>
+            //     {
+            //     cfg.AddProfile<MappingProfile.Profile1>();
+            //     cfg.AddProfile<MappingProfile.Profile2>();
+            //     });
+                
+            // services.AddInstance(typeof (IMapper), configuration.CreateMapper());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -77,6 +109,7 @@ namespace Puzzle.WebApi
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+            loggerFactory.AddSerilog();
 
             app.UseSwagger();
 

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using Puzzle.Infrastructure.Context;
-using Puzzle.Infrastructure.Model;
+using Puzzle.Infrastructure.Data.Context;
+using Puzzle.Infrastructure.Data.Model;
 using Puzzle.Core.Interface;
 using System.Linq;
  

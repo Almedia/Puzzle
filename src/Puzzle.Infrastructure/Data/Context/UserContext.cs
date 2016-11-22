@@ -3,15 +3,13 @@ using Puzzle.Infrastructure.Data.Model;
 
 namespace Puzzle.Infrastructure.Data.Context
 {
-    public class PhotoContext:DbContext
+    public class UserContext:DbContext
     {
-        public PhotoContext(DbContextOptions<PhotoContext> options): base(options)
+        public UserContext(DbContextOptions<UserContext> options): base(options)
         {
             
         }
 
-        public DbSet<Photo> Photo{get;set;}
-
-
+        public DbSet<User> User{get;set;}
     }
 }
