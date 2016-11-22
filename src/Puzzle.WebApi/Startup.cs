@@ -33,8 +33,7 @@ namespace Puzzle.WebApi
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
 
-            var rabbitMQConfig = new RabbitMQConfiguration {
-            };
+            
             //     Hostname = _config["RABBITMQ_HOST"],
             //     Username = _config["RABBITMQ_USER"],
             //     Password = _config["RABBITMQ_PASSWORD"],
