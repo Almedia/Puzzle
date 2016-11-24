@@ -24,7 +24,7 @@ namespace Puzzle.WebApi.Controllers
 
         [HttpPost]   
         public IActionResult Create([FromBody]User user){
-
+                this.userService.Create(user);
                 return CreatedAtRoute("user", new { id = user.UserID }, user);           
             }
 
@@ -33,7 +33,11 @@ namespace Puzzle.WebApi.Controllers
 
                 // this.photoService.SaveUserPhoto(photo);
 
-                return CreatedAtRoute("user", new { id = user.UserID }, user);           
+                return CreatedAtRoute("user", new { id = user.UserID }, user);                       
             }   
+        [HttpGet(Name="create")]
+        public void Login(){
+
         }
+    }
 }

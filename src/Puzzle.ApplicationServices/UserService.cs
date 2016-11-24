@@ -22,5 +22,8 @@ namespace Puzzle.ApplicationServices
             return user;
         }
 
+        public void Create(User user){
+            this.userRepository.Create(user);
+        }
     }
 }
