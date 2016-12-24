@@ -20,10 +20,6 @@ namespace Puzzle.Infrastructure.Data.Repository
              this.mapper=mapper;
         }
 
-        public void CreateCustomer(Puzzle.Core.Model.User user){
-
-        }
-
         public Puzzle.Core.Model.User Get(long userId){
             var user=this.userContext.User.Where(x=>x.UserID==userId).FirstOrDefault();
 
@@ -31,6 +27,21 @@ namespace Puzzle.Infrastructure.Data.Repository
                  return mapper.Map<User,Puzzle.Core.Model.User>(user);
             }
             return null;
+        }
+
+        public void Create(Puzzle.Core.Model.User user){
+
+                var dbUser=new User(){
+                    FirstName=user.FirstName,
+                    LastName=user.LastName,
+                    Email=user.Email,
+                    Gender=user.Gender,
+                    DateOfBirth=user.DateOfBirth,
+                    CreateDate=DateTime.UtcNow
+                };
+
+                userContext.Add(dbUser);
+                userContext.SaveChanges();
         }
     }
 }

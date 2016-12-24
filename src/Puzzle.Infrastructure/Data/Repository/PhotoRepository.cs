@@ -5,7 +5,7 @@ using Puzzle.Infrastructure.Data.Model;
 using Puzzle.Core.Interface;
 using System.Linq;
  
-namespace Puzzle.Infrastructure.Repository
+namespace Puzzle.Infrastructure.Data.Repository
 {
     public class PhotoRepository:IPhotoRepository
     {
