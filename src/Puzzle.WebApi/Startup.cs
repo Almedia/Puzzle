@@ -5,11 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Amazon.S3;
 using Puzzle.Core.Interface;
-using Puzzle.Infrastructure.Data.Context;
 using Puzzle.Infrastructure.Services;
 using Puzzle.Infrastructure.Repository;
 using Puzzle.ApplicationServices;
-<<<<<<< HEAD
 using MySQL.Data.EntityFrameworkCore.Extensions;
 using Serilog;
 // using RabbitMQ; 
@@ -18,12 +16,11 @@ using Serilog;
 // using Serilog.Sinks.RabbitMQ.Sinks.RabbitMQ;
 using AutoMapper;
 using Puzzle.Infrastructure.Mapping;
-
-=======
 using MySQL.Data.EntityFrameworkCore.Extensions; 
 using Serilog;
-using RabbitMQ; 
->>>>>>> 4b7a1b68b86aeca00ad128bab2170d380e4db9be
+using RabbitMQ;
+using Puzzle.Infrastructure.Data.Context;
+
 namespace Puzzle.WebApi
 {
     public class Startup
@@ -39,21 +36,18 @@ namespace Puzzle.WebApi
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
 
-<<<<<<< HEAD
             // var rabbitMQConfig = new RabbitMQConfiguration  {
             //     Hostname = "http://35.163.189.218",
             //     Username = "bado",
             //     Password = "Maslak55",
             //     Exchange = "LogExchange",
             //     ExchangeType = "RABBITMQ_EXCHANGE_TYPE",
-=======
             
             //     Hostname = _config["RABBITMQ_HOST"],
             //     Username = _config["RABBITMQ_USER"],
             //     Password = _config["RABBITMQ_PASSWORD"],
             //     Exchange = _config["RABBITMQ_EXCHANGE"],
             //     ExchangeType = _config["RABBITMQ_EXCHANGE_TYPE"],
->>>>>>> 4b7a1b68b86aeca00ad128bab2170d380e4db9be
             //     DeliveryMode = RabbitMQDeliveryMode.Durable,
             //     RouteKey = "Logs",
             //     Port = 5672
@@ -62,11 +56,8 @@ namespace Puzzle.WebApi
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
                 .WriteTo.LiterateConsole()
-<<<<<<< HEAD
-                .WriteTo.RollingFile(@"c:\Logs\Puzzle\Log.txt log-{Date}.txt")
-=======
+                // .WriteTo.RollingFile(@"c:\Logs\Puzzle\Log.txt log-{Date}.txt")
                 // .WriteTo.RabbitMQ(rabbitMQConfig, new JsonFormatter())
->>>>>>> 4b7a1b68b86aeca00ad128bab2170d380e4db9be
                 .CreateLogger();
         }
 
